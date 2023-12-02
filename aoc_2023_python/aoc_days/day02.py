@@ -7,9 +7,6 @@ def d02_cubegames_one(games_list: list[Game], bag_cube_count: Cubes) -> int:
 
     possible_games: list[Game] = []
 
-    a = Cubes(red=12, green=13, blue=14)
-    print(a > bag_cube_count)
-
     for game in games_list:
         valid_game = True
         for round in game.rounds:
